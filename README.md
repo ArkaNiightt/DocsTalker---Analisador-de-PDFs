@@ -16,8 +16,8 @@ Ferramenta interativa para análise e conversação com documentos PDF utilizand
 ## 🚀 Instalação
 1. Clone o repositório:
 ```bash
-git clone https://github.com/seu-usuario/docsTalker.git
-cd docsTalker
+git clone gh repo clone ArkaNiightt/DocsTalker---Analisador-de-PDFs
+cd DocsTalker---Analisador-de-PDFs
 ```
 
 2. Instale as dependências:
