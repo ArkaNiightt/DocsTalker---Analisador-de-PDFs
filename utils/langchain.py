@@ -10,7 +10,7 @@ from langchain_community.vectorstores.faiss import FAISS
 from langchain.chains.conversational_retrieval.base import ConversationalRetrievalChain
 from langchain.prompts import PromptTemplate
 
-ARQUIVOS = Path(__file__).parent.parent / "arquivos"
+ARQUIVOS = Path("./arquivos")
 
 
 def documents_loader():
