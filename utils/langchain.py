@@ -96,7 +96,8 @@ def create_chain_conversation():
 
     chat = ChatOpenAI(
         model=get_config("model_name"),
-        api_key=st.secrets["OPENAI_API_KEY"]
+        api_key=st.secrets["OPENAI_API_KEY"],
+        temperature=1.0,
     )
     memory = ConversationBufferMemory(
         return_messages=True,

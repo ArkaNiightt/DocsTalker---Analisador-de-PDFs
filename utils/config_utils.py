@@ -17,7 +17,7 @@ Conversa atual:
 Human: {question}
 AI:"""
 
-MODEL_OPTIONS = ["gpt-4o", "gpt-4o-mini", "gpt-3.5-turbo", "o1-mini"]
+MODEL_OPTIONS = ["o1-mini","gpt-4o", "gpt-4o-mini", "gpt-3.5-turbo"]
 SEARCH_TYPES = ["mmr", "similarity", "similarity_score_threshold", "hybrid"]
 
 def get_config(config: str, st=st):
