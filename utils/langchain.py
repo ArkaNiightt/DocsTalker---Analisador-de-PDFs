@@ -1,6 +1,5 @@
 import streamlit as st
 from pathlib import Path
-from dotenv import load_dotenv, find_dotenv
 from utils.config_utils import get_config
 from langchain.memory import ConversationBufferMemory
 from langchain_community.document_loaders.pdf import PyPDFLoader
@@ -10,8 +9,6 @@ from langchain_openai.chat_models import ChatOpenAI
 from langchain_community.vectorstores.faiss import FAISS
 from langchain.chains.conversational_retrieval.base import ConversationalRetrievalChain
 from langchain.prompts import PromptTemplate
-
-_ = load_dotenv(find_dotenv())
 
 ARQUIVOS = Path(__file__).parent.parent / "arquivos"
 
