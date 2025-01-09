@@ -1,7 +1,6 @@
 import streamlit
 from pathlib import Path
 
-
 def start_chatbot(st, directory, function):
     directory = Path(directory) if isinstance(directory, str) else directory
     if len(list(directory.glob("*.pdf"))) == 0:
@@ -23,6 +22,8 @@ def manage_pdfs(st: streamlit, directory: Path, pdf_list: list):
         None
     """
     directory = Path(directory) if isinstance(directory, str) else directory
+    if not directory.exists():
+        directory.mkdir(parents=True, exist_ok=True)
     for existing_file in directory.glob("*.pdf"):
         existing_file.unlink()
     for new_file in pdf_list:
