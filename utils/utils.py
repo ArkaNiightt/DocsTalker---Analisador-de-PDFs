@@ -1,8 +1,6 @@
 import streamlit
 from pathlib import Path
 
- 
-from pathlib import Path
 
 def start_chatbot(st, directory, function):
     directory = Path(directory) if isinstance(directory, str) else directory
