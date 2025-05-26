@@ -1,6 +1,6 @@
 import streamlit as st
 
-MODEL_NAME = "o1-mini"
+MODEL_NAME = "gpt-4.1"
 RETRIEVAL_SEARCH_TYPE = "mmr"
 RETRIEVAL_KWARGS = {"k": 5, "fetch_k": 20}
 PROMPT = """
